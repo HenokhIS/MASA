@@ -1,0 +1,77 @@
+<!-- res/layout/fragment_account.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/black_shade_1"
+    tools:context=".fragment.AccountFragment">
+
+    <TextView
+        android:id="@+id/tvAccountDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Account Detail"
+        android:textColor="@color/white"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"
+        android:paddingBottom="16dp"/>
+
+    <TextView
+        android:id="@+id/tvUsernameLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Username:"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:paddingBottom="8dp"/>
+
+    <TextView
+        android:id="@+id/tvUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="YourUsername"
+        android:textSize="26sp"
+        android:background="@drawable/rounded_corner_box"
+        android:padding="8dp"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:id="@+id/tvPasswordLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Password:"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:paddingBottom="8dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_corner_box"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/tvPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="********"
+            android:textSize="26sp"
+            android:gravity="center_vertical"
+            android:paddingEnd="40dp"/>
+
+        <ImageView
+            android:id="@+id/ivShowPassword"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/show_password"
+            android:contentDescription="Show Password"
+            android:padding="8dp"/>
+    </RelativeLayout>
+
+</LinearLayout>
